@@ -11,6 +11,7 @@ To write a python program for creating Chat using TCP Sockets Links.
 ### NAME : R ANIRUDH
 ### REG NO : 212223230016
 ## CLIENT
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -18,8 +19,10 @@ while True:
  msg=input("Client > ")
  s.send(msg.encode())
  print("Server > ",s.recv(1024).decode())
+```
 
 ## SERVER
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
